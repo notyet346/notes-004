@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/notepad.css">
+ </head>
+ <body>
+    <header>
+        <nav class="navbar">
+            
+        </nav>
+    </header>
+    <main class="main flex">
+        <div class="notepad">
+            <button class="btn-create-note" id="btn_create_note">Create Note</button>
+            <form class="form hidden" id="form">
+                <input class="title-input" type="text" name="title-input" id="title_input" placeholder="Title">
+                <textarea class="note-body-input" name="note-body-input" id="note_body_input" cols="10" rows="10" placeholder="Write Note"></textarea>
+                <div class="form-btns">
+                    <button class="form-btn btn-add-note" id="btn_add_note">Add Note</button>
+                <!-- allows default refreshing of page,
+                    should be coded in the script file to avoid problems -->
+                <button class="form-btn cancel" id="cancel">cancel</button>
+                </div>
+                
+            </form>
+
+            <div class="notes-list" id="title_list_div">
+                <ul class="title-list" id="title_list_UL">
+                </ul>
+            </div>
+            <div class="display-note hidden" id="display_note">
+                <button class="btn-dis-note btn-close-note" id="btn_close_note">close</button>
+                <div class="note-title" id="note_title">
+                </div>
+                <div class="note-body" id="note_body">
+                   
+                </div>
+                <button class="btn-dis-note btn-delete-note" id="btn_delete_note">delete</button>
+            </div>  
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./assets/js/script.js"></script>
+ </body>
+ </html>

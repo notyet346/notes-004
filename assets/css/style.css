@@ -1,0 +1,110 @@
+*, *::after, *::before {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*****************
+  
+  ******************/
+  /* black */
+  --black: #000;
+  --dark: hsl(0, 0%, 7%);
+  /* blue */
+  --very-dark-blue: #222831;
+  --blue-deep: hsl(202, 55%, 16%);
+  --blue-dark-mute: hsl(200, 24%, 40%);
+  --blue: #26619C;
+
+
+  /* blue-grey-blue */
+  --dark-blue-grey: #2f353d;
+  --blue-dark-greyish: #393E46 ;
+  --blue-grey-mute: hsl(200, 26%, 54%);
+  --soft-blue-grey: #B4CDE6;
+  /* grey */
+  --grey-darker: hsl(187, 24%, 22%);
+  --grey-medium: hsl(186, 15%, 59%);
+  /* blue-green */
+  --dark-blue-green: #213555;
+  --blue-green-moderate: #00ADB5;
+  --blue-green-soft-1: hsl(176, 68%, 64%);
+  --blue-green-soft-2: hsl(203, 41%, 72%);
+  --blue-green-pale: hsl(202, 86%, 94%);
+  /* cyan */
+  --cyan-strong: hsl(172, 67%, 45%);
+  --cyan-dark: hsl(183, 100%, 15%);
+  --cyan-dark-greyish: hsl(186, 14%, 43%);
+  --cyan-greyish: hsl(184, 14%, 56%);
+  --cyan-light-greyish: hsl(185, 41%, 84%);
+  --cyan-very-light-grayish: hsl(189, 41%, 97%);
+  /* red */
+  --red-warm-earthy: hsl(4, 69%, 50%);
+  --warm-red: hsl(0, 66%, 54%);
+  --bright-red: hsl(0, 100%, 63%);
+  --red-soft: hsl(0, 93%, 68%);
+  --red-desaturated: hsl(0, 36%, 70%);
+  
+  /* pink */
+  --warm-pink: #ffc2c2;
+  --light-pink: hsl(275, 100%, 97%);
+  
+  /* green */
+  --green-medium: hsl(169, 82%, 27%);
+  --green-yellow: hsl(75, 94%, 57%);
+  --green-lighter: hsl(148, 38%, 91%);
+    /* yellow */
+  --Lime: hsl(61, 70%, 52%);
+  --golden-yellow: hsl(47, 88%, 63%);
+  --yellow: #F8DE22;
+
+  /* purple*/
+  --dark-purple: hsl(292, 42%, 14%);
+  --dark-Raspberry: hsl(332, 51%, 32%);
+  --grayish-purple: hsl(292, 16%, 49%);
+
+  /* brown */
+  --Nutmeg: hsl(14, 45%, 36%);
+
+  /* orange */
+  --orange: #F26419;
+
+  /* ### Neutral */
+
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-greyish-red: hsl(0, 6%, 24%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+
+
+}
+
+button,
+input,
+textarea,
+select{
+  font-family: inherit;
+  font-size: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.grid {
+  display: grid;
+}
+.ps-center{
+  place-self: center;
+}
+
+.flex{
+  display: flex;
+}

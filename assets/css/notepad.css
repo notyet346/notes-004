@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins-bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+:root{
+    --poppins: 'Poppins' ,Arial, Helvetica, sans-serif;
+    --poppins-bold: 'Poppins-bold' ,Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--rose-white);
+    font-family: var(--poppins);
+}
+
+.navbar {
+    background-color: var(--white);
+}
+
+.main {
+    padding: 2rem;
+    justify-content: center;
+}
+  
+.notepad {
+    background-color: var(--eggshell);
+    width: 400px;   
+} 
+
+.btn-create-note {
+    background-color: var(--off-black);
+    color: var(--rose-white);
+    font-weight: bold;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 0.2);
+} 
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+input, 
+textarea{
+    padding-left: .5rem;
+}
+input, 
+textarea,
+.btn-delete {
+    background-color: var(--rose-white);
+    border-radius: .2rem;
+}
+.form-btn {
+    font-family: var(--poppins-bold);
+    width: 6rem;
+}
+.btn-add-note {   
+    border: 2px solid var(--off-black);   
+}
+
+.btn-add-note:hover {
+    background-color: var(--off-black);
+    color: var(--white);
+}
+.cancel{
+    float: right;
+    border: 2px solid var(--red-warm-earthy);  
+    color: var(--red-warm-earthy);
+}
+
+.cancel:hover{
+    background-color: var(--red-warm-earthy); 
+    color: var(--white);
+}
+/* notes-list */
+.title-list {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+}
+li{ 
+    list-style: none;
+    margin-bottom: .25rem;
+    background-color: var(--rose-white);
+    border-radius: .25rem;
+    padding: .25rem;
+    padding-left: .5rem;
+}
+
+li:hover{
+    opacity: .8;
+    font-family: var(--poppins-bold);
+}
+/* display-note */
+.display-note{
+    padding: 2rem; 
+    position: relative;
+}
+.btn-dis-note{
+    right: 0;
+    color: var(--white);
+    width: 4rem;
+}
+.btn-close-note{
+    position: absolute;
+    top: 0;
+    background-color: var(--dark-charcoal);
+}
+.btn-delete-note{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--red-warm-earthy);
+}
+.note-title {
+    margin-bottom: 1rem;
+    font-family: var(--poppins-bold);
+    color: var(--dark-charcoal);
+}
+.note-body {
+    line-height: 1.2;
+    font-size: .9rem;
+}
+.hidden{
+    display: none;
+}
